@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Student1 : MonoBehaviour
 {
-    public void PlayGame()
+    public void Student_1()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void QuitGame()
-    {
-        Debug.Log("QUIT!");
-        Application.Quit();
-    }
+   // public void QuitGame()
+   // {
+   //     Debug.Log("QUIT!");
+   //     Application.Quit();
+   // }
 }
