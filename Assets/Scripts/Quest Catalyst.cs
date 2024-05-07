@@ -12,11 +12,11 @@ public class QuestCatalyst : MonoBehaviour
     {
         if (quest != null && !questAdded)
         {
-            questAdded = !questAdded;
+            questAdded = true;
             MainManager.mainManager.questNames.Add(quest);  
         }
 
-        if (notification != null && !questAdded)
+        if (notification != null && questAdded)
         {
             notification.SetActive(true);
         }
