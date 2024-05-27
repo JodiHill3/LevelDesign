@@ -24,15 +24,15 @@ public class StartStop : MonoBehaviour
 
     public void ChangeStartStop()
     {
-        if (player.isPlaying == false)
-        {
-            player.Play();
-            button.image.sprite = StopSprite;
-        }
-        else
+        if (player.isPlaying == true)
         {
             player.Pause();
             button.image.sprite = StartSprite;
+        }
+        else
+        {
+            player.Play();
+            button.image.sprite = StopSprite;
         }
     }
 }
