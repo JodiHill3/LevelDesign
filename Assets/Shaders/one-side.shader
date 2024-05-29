@@ -2,7 +2,7 @@ Shader"Unlit/one-side"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex ("Texture", 2D) = "FFCD7F,0,0" {}
         [Enum(UnityEngine.Rendering.CullMode)] _Cull("Cull", Float)=0
     }
     SubShader
